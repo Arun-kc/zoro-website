@@ -12,13 +12,13 @@ import {
   NavBtnLink,
 } from "./NavbarElements";
 
-function Navbar() {
+function Navbar({ toggle }) {
   return (
     <>
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">Zoro</NavLogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
