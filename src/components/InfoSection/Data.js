@@ -1,4 +1,5 @@
 import img1 from "../../images/zoro1.png";
+import contributions from "../../images/contributions.svg";
 
 export const homeObjOne = {
   id: "about",
@@ -55,19 +56,19 @@ export const homeObjThree = {
 };
 
 export const homeObjFour = {
-  id: "contributions",
-  lightBg: false,
-  lightText: true,
+  id: "contribution",
+  lightBg: true,
+  lightText: false,
   lightTextDesc: true,
-  topLine: "TopLine data",
-  headline: "SOme headline",
-  description: "Come up with something",
-  buttonLabel: "Invite ME",
+  topLine: "Like this project?",
+  headline: "Let's Make Zoro Cool!!",
+  description: `All sorts of contributions are welcome, even if its a typo you are welcome to contribute`,
+  buttonLabel: "Start Contributing",
   imgStart: false,
   //img: require("../../images/zoro3.jfif"),
-  img: img1,
+  img: contributions,
   alt: "something about  img",
-  dark: true,
-  primary: true,
-  darkText: false,
+  dark: false,
+  primary: false,
+  darkText: true,
 };
