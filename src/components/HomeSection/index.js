@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Video from "../../videos/video1.mp4";
-import Image from "../../images/zoro.png";
-import { Button } from "../ButtonElement";
+import Image from "../../images/zoro2.png";
+import { Button } from "../ButtonElements";
 import {
   HomeContainer,
   HomeBg,

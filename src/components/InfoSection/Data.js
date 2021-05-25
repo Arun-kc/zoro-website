@@ -1,0 +1,73 @@
+import img1 from "../../images/zoro1.png";
+
+export const homeObjOne = {
+  id: "about",
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: "TopLine data",
+  headline: "SOme headline",
+  description: "Come up with something",
+  buttonLabel: "Invite ME",
+  imgStart: false,
+  //img: require("../../images/zoro3.jfif"),
+  img: img1,
+  alt: "something about  img",
+  dark: true,
+  primary: true,
+  darkText: false,
+};
+
+export const homeObjTwo = {
+  id: "features",
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: true,
+  topLine: "TopLine data",
+  headline: "SOme headline",
+  description: "Come up with something",
+  buttonLabel: "Invite ME",
+  imgStart: true,
+  //img: require("../../images/zoro3.jfif"),
+  img: img1,
+  alt: "something about  img",
+  dark: false,
+  primary: false,
+  darkText: true,
+};
+
+export const homeObjThree = {
+  id: "commands",
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: "TopLine data",
+  headline: "SOme headline",
+  description: "Come up with something",
+  buttonLabel: "Invite ME",
+  imgStart: false,
+  //img: require("../../images/zoro3.jfif"),
+  img: img1,
+  alt: "something about  img",
+  dark: true,
+  primary: true,
+  darkText: false,
+};
+
+export const homeObjFour = {
+  id: "contributions",
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: "TopLine data",
+  headline: "SOme headline",
+  description: "Come up with something",
+  buttonLabel: "Invite ME",
+  imgStart: false,
+  //img: require("../../images/zoro3.jfif"),
+  img: img1,
+  alt: "something about  img",
+  dark: true,
+  primary: true,
+  darkText: false,
+};
