@@ -10,6 +10,13 @@ function App() {
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/commands" component={CommandsPage} exact />
+        <Route
+          path="/contributions"
+          target={"_blank"}
+          render={() =>
+            (window.location = "https://github.com/Arun-kc/novicebot")
+          }
+        />
       </Switch>
     </Router>
   );
