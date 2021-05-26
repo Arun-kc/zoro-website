@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../ButtonElements";
+import { Button, CommandBtnLink } from "../ButtonElements";
 import {
   InfoContainer,
   InfoWrapper,
@@ -30,6 +30,7 @@ const InfoSection = ({
   primary,
   dark,
   dark2,
+  show,
 }) => {
   return (
     <>
@@ -41,9 +42,9 @@ const InfoSection = ({
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
-                <BtnWrap>
-                  <Button
-                    to=""
+                <BtnWrap show={show}>
+                  <CommandBtnLink
+                    to="/commands"
                     smooth={true}
                     duration={500}
                     spy={true}
@@ -54,7 +55,7 @@ const InfoSection = ({
                     dark2={dark2 ? 1 : 0}
                   >
                     {buttonLabel}
-                  </Button>
+                  </CommandBtnLink>
                 </BtnWrap>
               </TextWrapper>
             </Column1>

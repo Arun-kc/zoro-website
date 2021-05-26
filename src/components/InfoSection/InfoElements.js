@@ -83,7 +83,8 @@ export const Subtitle = styled.p`
 `;
 
 export const BtnWrap = styled.div`
-  display: flex;
+  //display: flex;
+  display: ${({ show }) => (show ? "flex" : "none")};
   justify-content: flex-start;
 `;
 
