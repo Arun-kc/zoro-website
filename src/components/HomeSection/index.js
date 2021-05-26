@@ -14,6 +14,7 @@ import {
   ArrowRight,
   HomeImage,
   Container,
+  HomeRow,
 } from "./HomeElements";
 
 const HomeSection = () => {
@@ -28,24 +29,26 @@ const HomeSection = () => {
       <HomeBg>
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HomeBg>
-      <Container>
-        <HomeImage src={Image}></HomeImage>
-      </Container>
-      <HomeContent>
-        <HomeH1>Zoro Bot</HomeH1>
-        <HomeP>Write something about the bot here</HomeP>
-        <HomeBtnWrapper>
-          <Button
-            to="inviteme"
-            onMouseEnter={onHover}
-            onMouseLeave={onHover}
-            primary="true"
-            dark="true"
-          >
-            Invite Me {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
-        </HomeBtnWrapper>
-      </HomeContent>
+      <HomeRow imgStart={true}>
+        <Container>
+          <HomeImage src={Image}></HomeImage>
+        </Container>
+        <HomeContent>
+          <HomeH1>Zoro Bot</HomeH1>
+          <HomeP>Write something about the bot here</HomeP>
+          <HomeBtnWrapper>
+            <Button
+              to="inviteme"
+              onMouseEnter={onHover}
+              onMouseLeave={onHover}
+              primary="true"
+              dark="true"
+            >
+              Invite Me {hover ? <ArrowForward /> : <ArrowRight />}
+            </Button>
+          </HomeBtnWrapper>
+        </HomeContent>
+      </HomeRow>
     </HomeContainer>
   );
 };

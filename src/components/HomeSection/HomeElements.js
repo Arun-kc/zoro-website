@@ -47,13 +47,28 @@ export const VideoBg = styled.video`
   background: #232a34;
 `;
 
+export const HomeRow = styled.div`
+  display: grid;
+  grid-auto-columns: minmax(auto, 1fr);
+  align-items: center;
+  grid-template-areas: ${({ imgStart }) =>
+    imgStart ? `'col2 col1'` : `'col1 col2'`};
+
+  @media screen and (max-width: 780px) {
+    grid-template-areas: ${({ imgStart }) =>
+      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+  }
+`;
+
 export const HomeContent = styled.div`
   z-index: 3;
   margin-left: auto;
   margin-bottom: auto;
+  grid-area: col2;
+  // background: rgba(76, 175, 80, 0.3);
   max-width: 1200px;
   position: absolute;
-  padding: 8px 24px;
+  padding: 250px 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -117,9 +132,12 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
 // `;
 
 export const HomeImage = styled.img`
-  width: auto;
+  /* width: auto;
   height: auto;
-  margin: auto;
+  margin: auto; */
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding-right: 0;
   transform: translatey(0px);
   animation: float 4s ease-in-out infinite;
 
@@ -138,6 +156,7 @@ export const HomeImage = styled.img`
 
 export const Container = styled.div`
   z-index: 3;
+  grid-area: col1;
   display: flex;
   flex-wrap: wrap;
   margin-right: auto;
