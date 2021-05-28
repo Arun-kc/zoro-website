@@ -1,6 +1,7 @@
 import React from "react";
 import { FaNodeJs, FaReact, FaDiscord, FaGithub } from "react-icons/fa";
 import { GiEternalLove } from "react-icons/gi";
+import { animateScroll as scroll } from "react-scroll";
 import {
   FooterContainer,
   FooterWrap,
@@ -23,6 +24,10 @@ import {
 } from "./FooterElements";
 
 const Footer = () => {
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <FooterContainer>
       <FooterWrap>
@@ -75,7 +80,9 @@ const Footer = () => {
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/">Zoro</SocialLogo>
+            <SocialLogo to="/" onClick={toggleHome}>
+              Zoro
+            </SocialLogo>
             <WebsiteRights>
               zoro ©️ {new Date().getFullYear()}
               <ReservedStrike>{" All rights reserved "}</ReservedStrike>
