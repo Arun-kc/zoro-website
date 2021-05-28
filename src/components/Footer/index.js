@@ -1,5 +1,5 @@
 import React from "react";
-import { FaNodeJs, FaReact, FaDiscord } from "react-icons/fa";
+import { FaNodeJs, FaReact, FaDiscord, FaGithub } from "react-icons/fa";
 import { GiEternalLove } from "react-icons/gi";
 import {
   FooterContainer,
@@ -13,6 +13,13 @@ import {
   ReactJs,
   Discord,
   Love,
+  SocialMedia,
+  SocialMediaWrap,
+  SocialLogo,
+  WebsiteRights,
+  SocialIcons,
+  SocialIconLink,
+  ReservedStrike,
 } from "./FooterElements";
 
 const Footer = () => {
@@ -65,23 +72,33 @@ const Footer = () => {
               </FooterLinkTitle>
             </FooterLinkItems>
           </FooterLinksWrapper>
-          {/* <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle>About Us4</FooterLinkTitle>
-              <FooterLink to="/">How it works</FooterLink>
-              <FooterLink to="/">How it works</FooterLink>
-              <FooterLink to="/">How it works</FooterLink>
-              <FooterLink to="/">How it works</FooterLink>
-            </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle>About Us5</FooterLinkTitle>
-              <FooterLink to="/">How it works</FooterLink>
-              <FooterLink to="/">How it works</FooterLink>
-              <FooterLink to="/">How it works</FooterLink>
-              <FooterLink to="/">How it works</FooterLink>
-            </FooterLinkItems>
-          </FooterLinksWrapper> */}
         </FooterLinksContainer>
+        <SocialMedia>
+          <SocialMediaWrap>
+            <SocialLogo to="/">Zoro</SocialLogo>
+            <WebsiteRights>
+              zoro ©️ {new Date().getFullYear()}
+              <ReservedStrike>{" All rights reserved "}</ReservedStrike>
+              {" Its OpenSource!!!"}
+            </WebsiteRights>
+            <SocialIcons>
+              <SocialIconLink
+                href="https://github.com/Arun-kc/zoro-website"
+                target="_blank"
+                aria-label="Github"
+              >
+                <FaGithub />
+              </SocialIconLink>
+              <SocialIconLink
+                href="https://discord.gg/9GSkAeEzkn"
+                target="_blank"
+                aria-label="Discord"
+              >
+                <FaDiscord />
+              </SocialIconLink>
+            </SocialIcons>
+          </SocialMediaWrap>
+        </SocialMedia>
       </FooterWrap>
     </FooterContainer>
   );
