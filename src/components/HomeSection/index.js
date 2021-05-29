@@ -38,7 +38,8 @@ const HomeSection = () => {
           <HomeP>Write something about the bot here</HomeP>
           <HomeBtnWrapper>
             <Button
-              to="inviteme"
+              href="https://discord.com/api/oauth2/authorize?client_id=831858970401701898&permissions=4278190070&redirect_uri=https%3A%2F%2Fdiscord.gg%2F9GSkAeEzkn&scope=bot"
+              target="_blank"
               onMouseEnter={onHover}
               onMouseLeave={onHover}
               primary="true"
