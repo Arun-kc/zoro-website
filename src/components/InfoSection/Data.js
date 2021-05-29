@@ -39,7 +39,7 @@ export const homeObjTwo = {
 
 export const homeObjThree = {
   id: "commands",
-  lightBg: false,
+  lightBg: false, //need tochange
   lightText: true,
   lightTextDesc: true,
   topLine: "TopLine data",
@@ -47,7 +47,8 @@ export const homeObjThree = {
   description: "Come up with something",
   buttonLabel: "Commands List",
   imgStart: true,
-  show: true,
+  toShow: true,
+  aShow: false,
   to: "/commands",
   //img: require("../../images/zoro3.jfif"),
   img: img1,
@@ -67,8 +68,9 @@ export const homeObjFour = {
   description: `All sorts of contributions are welcome, even if its a typo you are welcome to contribute`,
   buttonLabel: "Start Contributing",
   imgStart: false,
-  show: true,
-  to: "/contributions",
+  toShow: false,
+  aShow: true,
+  to: "https://github.com/Arun-kc/novicebot",
   //img: require("../../images/zoro3.jfif"),
   img: contributions,
   alt: "something about  img",
