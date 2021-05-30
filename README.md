@@ -47,6 +47,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ---
 
-Contributions are welcome! <3
+Contributions are welcome! ❤️
 
 Made with 💜 and JavaScript.
