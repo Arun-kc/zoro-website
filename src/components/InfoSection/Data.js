@@ -1,5 +1,7 @@
 import img1 from "../../images/zoro1.png";
 import contributions from "../../images/contributions.svg";
+import commands from '../../images/ss.png';
+import fun from '../../images/ss0.png';
 
 export const homeObjOne = {
   id: "about",
@@ -30,7 +32,7 @@ export const homeObjTwo = {
   buttonLabel: "Invite ME",
   imgStart: false,
   //img: require("../../images/zoro3.jfif"),
-  img: img1,
+  img: fun,
   alt: "something about  img",
   dark: false,
   primary: false,
@@ -47,11 +49,11 @@ export const homeObjThree = {
   description: "Fun | Image manipulation | Social | Utility | Moderation",
   buttonLabel: "Commands List",
   imgStart: true,
-  toShow: true,
+  toShow: false, // turn to true when command page is ready
   aShow: false,
-  to: "/commands",
+  to: "/commands", // show the button when command page is ready
   //img: require("../../images/zoro3.jfif"),
-  img: img1,
+  img: commands,
   alt: "something about  img",
   dark: true,
   primary: true,
