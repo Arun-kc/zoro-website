@@ -34,8 +34,8 @@ const HomeSection = () => {
           <HomeImage src={Image}></HomeImage>
         </Container>
         <HomeContent>
-          <HomeH1>Zoro Bot</HomeH1>
-          <HomeP>Write something about the bot here</HomeP>
+          <HomeH1>⚔️ Zoro ⚔️</HomeH1>
+          <HomeP>Your next favourite discord entertainer!!🎉</HomeP>
           <HomeBtnWrapper>
             <Button
               href="https://discord.com/api/oauth2/authorize?client_id=831858970401701898&permissions=4278190070&redirect_uri=https%3A%2F%2Fdiscord.gg%2F9GSkAeEzkn&scope=bot"
